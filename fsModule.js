@@ -14,15 +14,16 @@ const filePath = path.join(__dirname, fileName);
 
 //*  
 
-// const fileName = "test.txt";
-// const filePath = path.join(__dirname, fileName);
-// const writeFile = fs.writeFileSync(
-//     filePath,
-//     "This is th initial data ",
-//     "utf-8"
-// );
-// console.log(writeFile);
+
+const writeFile = fs.writeFileSync(
+    filePath,
+    "This is th initial data ",
+    "utf-8"
+);
+console.log(writeFile);
  
+
+
 // *                                                                 *
 //* fs.readFileSync(): Reads a file's content and returns it as a string or Buffer.
 //! Syntax: const data = fs.readFileSync(filePath, options);
@@ -30,8 +31,12 @@ const filePath = path.join(__dirname, fileName);
 // ? options: Optional. Ecoding('utf8) to get data as a string.
 // *
 
+
+
 const readFile = fs.readFileSync(filePath,"utf-8");
 console.log(readFile);
+
+
 
 // *                                                                 *
 //*fs.appendFileSync(): Appends data to a file. If the file does not exist, it creates the file.
@@ -40,6 +45,8 @@ console.log(readFile);
 // ? data: Content to add to the file.
 // ? options: Optional. Encoding options("utf8").
 // *
+
+
 
 const appendFile = fs.appendFileSync(
         filePath,
