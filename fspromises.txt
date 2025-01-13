@@ -1,2 +1,1 @@
-This is the content of the file
-this is the updated data 
+This is the data that is written to the file
